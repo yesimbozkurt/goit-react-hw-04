@@ -2,9 +2,11 @@ import React from "react";
 
 const ImageCard = () => {
   return (
-    <div>
-      <img src="" alt="" />
-    </div>
+    <li>
+      <div>
+        <img src="" alt="" />
+      </div>
+    </li>
   );
 };
 
