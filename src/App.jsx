@@ -3,7 +3,10 @@ import "./App.css";
 import SearchBar from "./components/SearchBar";
 import axios from "axios";
 import toast from "react-hot-toast";
+import Loader from "./components/Loader";
+import ImageGallery from "./components/ImageGallery";
 
+//unsplash API
 const API_URL = "https://api.unsplash.com/search/photos";
 const ACCESS_KEY = "id4k_2UHsEzZ1zvFFy_ZGVa7whX-bYZfyW_Ys9nuduU";
 

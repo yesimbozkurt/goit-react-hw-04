@@ -1,5 +1,6 @@
 import ContentLoader from "react-content-loader";
 import Styles from "./ImageGallery.module.css";
+import Card from "./ImageCard";
 
 const galleryLoader = () => {
   return (

@@ -1,10 +1,10 @@
 import React from "react";
 
-const ImageCard = () => {
+const ImageCard = ({ url, title }) => {
   return (
-    <li>
+    <li className={Styles.imageCard}>
       <div>
-        <img src="" alt="" />
+        <img src={url} alt={title} />
       </div>
     </li>
   );
