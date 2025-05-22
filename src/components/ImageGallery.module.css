@@ -6,4 +6,15 @@
 
 .imageCard {
     display: flex;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.imageCard:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+    border: 2px solid var(--primary-color);
+    box-shadow: 0 4px 8px var(--secondary-color);
 }

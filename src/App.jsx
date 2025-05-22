@@ -3,8 +3,8 @@ import "./App.css";
 import SearchBar from "./components/SearchBar";
 import axios from "axios";
 import toast from "react-hot-toast";
-import Loader from "./components/Loader";
 import ImageGallery from "./components/ImageGallery";
+import ImageModal from "./components/ImageModal";
 
 //unsplash API
 const API_URL = "https://api.unsplash.com/search/photos";
@@ -14,9 +14,14 @@ function App() {
   const [search, setSearch] = useState();
   const [page, setPage] = useState(1);
   const [photos, setPhotos] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
+  const [modal, setModal] = useState(false);
 
   const searchPhoto = (search) => {
     setSearch(search);
+    setPhotos([]);
+    setPage(1);
+    setIsLoading(true);
   };
 
   useEffect(() => {
@@ -51,9 +56,22 @@ function App() {
     }
   }, [search, page]);
 
+  const selectedImage = (image) => {
+    setModal(image);
+  };
+  const closeModal = () => {
+    setModal(false);
+  };
+
   return (
     <div className="App">
       <SearchBar searchPhoto={searchPhoto} />
+      <ImageGallery
+        gallery={photos}
+        loading={isLoading}
+        selectedImage={selectedImage}
+      />
+      <ImageModal data={modal} closeModal={closeModal} />
     </div>
   );
 }

@@ -1,15 +1,15 @@
 :root {
   --primary-color: #A6C48A;
   --secondary-color: #678D58;
-  --thirthy-color: #f8f1e4;
-  --fourth-color: #DD9787;
+  --thirthy-color: #dacbb1;
+  --fourth-color: #c68577;
   --text-color: #d7e8c6;
 }
 
 body {
   font-family: 'Poppins', sans-serif;
   background-color: var(--thirthy-color);
-  color: var(--text-color);
+  color: var(--fourth-color);
   line-height: 1.6;
 }
 
