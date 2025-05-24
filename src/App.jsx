@@ -18,6 +18,11 @@ function App() {
   const [isLoading, setIsLoading] = useState(false);
   const [modal, setModal] = useState(false);
 
+  const loadMore = () => {
+    setPage((prev) => prev + 1);
+    setIsLoading(true);
+  };
+
   const searchPhoto = (search) => {
     setSearch(search);
     setPhotos([]);
@@ -73,7 +78,7 @@ function App() {
         selectedImage={selectedImage}
       />
       <ImageModal data={modal} closeModal={closeModal} />
-      <LoadMoreBtn />
+      <LoadMoreBtn loadMore={loadMore} />
     </div>
   );
 }
