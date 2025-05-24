@@ -6,8 +6,6 @@
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.8);
 
-    width: 100vw;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,7 +16,7 @@
 
 .modal {
     box-shadow: var(--fourth-color);
-    width: 400px;
-    height: 200px;
+    width: 100vw;
+    height: 100vh;
     position: relative;
 }
