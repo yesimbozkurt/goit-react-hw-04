@@ -19,4 +19,7 @@
     width: 100vw;
     height: 100vh;
     position: relative;
+    display: flex;
+    justify-content: column;
+    align-items: center;
 }
