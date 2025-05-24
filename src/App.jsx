@@ -47,7 +47,6 @@ function App() {
           setPhotos((prev) => [...prev, ...results]);
           toast.success(`Found ${total} results and ${total_pages} pages`);
         }
-        console.log(response);
       } catch (error) {
         console.error("Error fetching photos:", error);
       } finally {
