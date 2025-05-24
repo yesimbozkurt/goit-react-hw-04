@@ -20,7 +20,6 @@ function App() {
 
   const loadMore = () => {
     setPage((prev) => prev + 1);
-    setIsLoading(true);
   };
 
   const searchPhoto = (search) => {
