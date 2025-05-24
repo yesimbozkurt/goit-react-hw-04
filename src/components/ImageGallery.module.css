@@ -2,19 +2,17 @@
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    justify-content: center;
 }
 
 .imageCard {
     display: flex;
-    width: 200px;
+    width: 400px;
     height: 200px;
     overflow: hidden;
     border-radius: 10px;
 }
 
 .imageCard:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s;
-    border: 2px solid var(--primary-color);
-    box-shadow: 0 4px 8px var(--secondary-color);
+    box-shadow: 0 4px 6px var(--secondary-color);
 }

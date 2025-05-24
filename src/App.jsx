@@ -5,6 +5,7 @@ import axios from "axios";
 import toast from "react-hot-toast";
 import ImageGallery from "./components/ImageGallery";
 import ImageModal from "./components/ImageModal";
+import LoadMoreBtn from "./components/LoadMoreBtn";
 
 //unsplash API
 const API_URL = "https://api.unsplash.com/search/photos";
@@ -72,6 +73,7 @@ function App() {
         selectedImage={selectedImage}
       />
       <ImageModal data={modal} closeModal={closeModal} />
+      <LoadMoreBtn />
     </div>
   );
 }

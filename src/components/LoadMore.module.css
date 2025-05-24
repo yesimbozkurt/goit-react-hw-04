@@ -1,0 +1,15 @@
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+
+    background-color: var(--secondary-color);
+    color: var(--thirthy-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: var(--primary-color);
+}
